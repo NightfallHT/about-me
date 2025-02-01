@@ -1,0 +1,101 @@
+:root {
+	--viewport-scale: 0.390625vw;
+	--CA-offset: calc(0.1em);
+	--bg-color: #0a0a0a;
+	--primary-full: rgb(240, 248, 255);
+	--primary-dimmed: rgb(180, 180, 180);
+	--CA-blue-full: rgba(5, 235, 237, 0.3);
+	--CA-red-full: rgba(229, 7, 18, 0.3);
+	--CA-blue-dimmed: rgba(5, 235, 237, 0.2);
+	--CA-red-dimmed: rgba(229, 7, 18, 0.2);
+	--font-size-primary: clamp(1.4rem, 3vw, 2.6rem);
+	--font-size-secondary: clamp(1.2rem, 2.4vw, 2rem);
+	--current-channel: url("./@media/channel1.gif");
+
+	scroll-behavior: smooth;
+}
+section h1 {
+	all: unset;
+}
+
+.images-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.images-wrapper div,
+.gallery-miniature {
+	width: clamp(14vh, 15vw, 20vh);
+	height: clamp(14vh, 15vw, 20vh);
+	background-size: cover;
+	background-position-x: center;
+}
+#pop-up-anchor {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#pop-up-container {
+	box-sizing: border-box;
+	overflow: hidden;
+	cursor: move;
+	pointer-events: all;
+	position: absolute;
+	padding: 0.1rem;
+	background-color: var(--primary-full);
+	width: fit-content;
+	height: fit-content;
+}
+
+.gallery-miniature {
+	pointer-events: none;
+	object-fit: cover;
+}
+
+#pop-up-image,
+#pop-up-close {
+	all: unset;
+}
+#pop-up-image {
+	min-width: 20vw;
+	max-width: 60vw;
+	max-height: 80vh;
+	object-fit: scale-down;
+	width: 100%;
+}
+#pop-up-band {
+	display: flex;
+	justify-content: space-between;
+	color: var(--bg-color);
+	font-size: var(--font-size-primary);
+}
+
+#pop-up-close {
+	cursor: pointer;
+}
+.gallery-image {
+	box-sizing: content-box;
+	border: 2px solid white;
+}
+
+.gallery-item {
+	margin: 0;
+	padding: 1rem;
+	width: fit-content;
+}
+.images-wrapper {
+	display: flex;
+	gap: 1rem;
+}
+
+figcaption {
+	font-size: var(--font-size-secondary);
+}

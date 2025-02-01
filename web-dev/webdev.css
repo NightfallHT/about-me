@@ -1,0 +1,32 @@
+#svg-preset {
+	display: none;
+}
+#projects-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+.project-name {
+	cursor: pointer;
+	font-size: var(--font-size-primary);
+}
+
+.project-section {
+	height: 100%;
+}
+
+.project-description,
+.live-link {
+	font-size: var(--font-size-secondary);
+}
+
+.live-link {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	#projects-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./webdev.css"
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		<title>my hobby | webdev</title>
+	</head>
+	<body>
+		<div id="crt-lines"></div>
+		<div id="main-container">
+			<div id="nav-wrapper">
+				<div
+					id="nav-container"
+					class="text-dimmed"
+				>
+					<nav class="flex-column">
+						<a
+							class="text-full interactive"
+							id="home"
+							href="../"
+							>/home</a
+						>
+						<input
+							type="checkbox"
+							id="projects-toggle"
+							class="toggle-checkbox"
+						/>
+						<label
+							id="projects-label"
+							class="interactive"
+							for="projects-toggle"
+							>/projects</label
+						>
+						<div class="flex-column togglable">
+							<a
+								id="3d"
+								class="interactive"
+								href="./../3d/3d.html"
+								>└ 3D</a
+							>
+							<a
+								id="webdev"
+								class="interactive"
+								>└ webdev</a
+							>
+						</div>
+
+						<a
+							id="contact"
+							class="interactive"
+							href="./../contact/contact.html"
+							>/contact</a
+						>
+					</nav>
+					<div id="nav-info">
+						<noscript>
+							<div id="date">14 Oct, 2005</div>
+						</noscript>
+					</div>
+					<script src="../@scripts/nav.js"></script>
+				</div>
+			</div>
+			<header>
+				<h1 class="text-full">my favorite projects &lt;3</h1>
+			</header>
+			<main
+				id="content-wrapper"
+				class="text-full vhs-filter"
+			>
+				<div id="projects-wrapper">
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/NightfallHT/jd-graph-ts/"
+								>jd graph&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							procedural quadratic equation solver
+						</div>
+						<a
+							target="_blank"
+							class="live-link"
+							href="https://nightfallht.github.io/jd-graph-ts/"
+							>Live&nbsp;▶</a
+						>
+					</section>
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/NightfallHT/spirograph/"
+								>spirograph&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							interactive js spirograph
+						</div>
+						<a
+							target="_blank"
+							class="live-link"
+							href="https://nightfallht.github.io/spirograph"
+							>Live&nbsp;▶</a
+						>
+					</section>
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/ElectiHard/stock_stealer/"
+								>stock stealer&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							an app to view stock prices
+						</div>
+						<a
+							target="_blank"
+							class="live-link"
+							href="https://ElectiHard.github.io/stock_stealer/"
+							>Live&nbsp;▶</a
+						>
+					</section>
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/NightfallHT/odin-recipes/"
+								>odin recipes&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							a scandinavian recipe site
+						</div>
+						<a
+							target="_blank"
+							class="live-link"
+							href="https://nightfallht.github.io/odin-recipes/"
+							>Live&nbsp;▶</a
+						>
+					</section>
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/NightfallHT/trig-identities/"
+								>trig identities&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							showcasing trigonometric identities
+						</div>
+					</section>
+					<section class="project-section">
+						<h2 class="project-name">
+							<a
+								target="_blank"
+								href="https://github.com/NightfallHT/stocks/"
+								>stocks&nbsp;▶</a
+							>
+						</h2>
+						<div
+							class="text-dimmed project-description"
+							role="doc-subtitle"
+						>
+							console version of the stock stealer
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer class="text-full">
+				<nav class="uppercase full flex-column">
+					<a
+						class="interactive"
+						href="https://www.youtube.com/channel/UC75J4dY3h3v5KTrBteo98hQ"
+					>
+						&gt; Youtube
+						<img
+							id="yt-logo"
+							class="image-dimmed footer-icon"
+							src="../@media/yt-logo.svg"
+							alt="youtube logo"
+						/>
+					</a>
+					<a
+						class="interactive"
+						href="https://www.instagram.com/thattentativetype"
+					>
+						&gt; Instagram
+						<img
+							id="ig-logo"
+							class="image-dimmed footer-icon"
+							src="../@media/ig-logo.svg"
+							alt="instagram logo"
+						/>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<div id="crt-video"></div>
+		<div id="pop-up-anchor"></div>
+	</body>
+</html>

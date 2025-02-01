@@ -1,0 +1,296 @@
+@font-face {
+	font-family: VHS;
+	src: url("@media/VCR_OSD_MONO_1.001.ttf");
+}
+
+:root {
+	--viewport-scale: 0.390625vw;
+	--CA-offset: calc(0.1em);
+	--bg-color: #0a0a0a;
+	--primary-full: rgb(240, 248, 255);
+	--primary-dimmed: rgb(180, 180, 180);
+	--CA-blue-full: rgba(5, 235, 237, 0.3);
+	--CA-red-full: rgba(229, 7, 18, 0.3);
+	--CA-blue-dimmed: rgba(5, 235, 237, 0.2);
+	--CA-red-dimmed: rgba(229, 7, 18, 0.2);
+	--font-size-primary: clamp(1.4rem, 3vw, 2.6rem);
+	--font-size-secondary: clamp(1.2rem, 2.4vw, 2rem);
+	--current-channel: url("./@media/channel1.gif");
+
+	scroll-behavior: smooth;
+}
+
+.text-full,
+.toggle-checkbox:checked + label {
+	color: var(--primary-full);
+	text-shadow: var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-full),
+		calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-full);
+}
+
+.text-dimmed {
+	color: var(--primary-dimmed);
+	text-shadow: var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-dimmed),
+		calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-dimmed);
+}
+
+.image-full {
+	filter: drop-shadow(var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-full))
+		drop-shadow(calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-full));
+}
+
+.image-dimmed {
+	filter: drop-shadow(var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-dimmed))
+		drop-shadow(calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-dimmed));
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+header > h1,
+header > h2 {
+	all: unset;
+	font-weight: bold;
+}
+header {
+	margin: 6vh 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+header > h1 {
+	font-size: calc(var(--font-size-primary) * 1.6);
+}
+header > h2 {
+	font-size: var(--font-size-secondary);
+}
+
+a {
+	all: unset;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "VHS", monaco, monospace;
+	background-color: var(--bg-color);
+}
+
+main {
+	font-size: var(--font-size-primary);
+	line-height: 1.5;
+	margin: 5vh 0;
+	width: 100%;
+}
+#nav-wrapper {
+	width: 100%;
+	height: 20vw;
+	display: flex;
+	align-items: baseline;
+}
+
+#nav-container,
+footer {
+	font-size: var(--font-size-secondary);
+	width: 100%;
+}
+
+nav {
+	flex-grow: 1;
+}
+
+#nav-container {
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 10vh;
+	gap: 1em;
+}
+
+#nav-container *,
+footer * {
+	line-height: 1.2em;
+}
+nav a,
+.togglable,
+#nav-info {
+	min-width: max-content;
+}
+
+.interactive:hover,
+label.interactive:hover {
+	text-shadow: none;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-full),
+		calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-full);
+	background-color: var(--primary-full);
+	color: rgb(47, 48, 51);
+	fill: rgb(47, 48, 51);
+}
+
+.interactive:hover > .footer-icon {
+	filter: grayscale(1) brightness(0.5) contrast(50) brightness(2);
+}
+
+.interactive:active {
+	background-color: var(--primary-dimmed);
+}
+
+#main-container {
+	width: 100%;
+	height: fit-content;
+	padding: 8vh max(1rem, calc(20vw - 4rem));
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-active {
+	color: #fff;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.toggle-checkbox {
+	display: none;
+}
+
+.togglable > * {
+	pointer-events: none;
+	box-sizing: border-box;
+	height: 0;
+	opacity: 0;
+	transition: height 0.2s, opacity 0.2s;
+}
+.togglable > a {
+	padding: 0 0 0 1em;
+}
+
+.toggle-checkbox:checked + * + .togglable > * {
+	pointer-events: all;
+	height: 1.2em;
+	opacity: 1;
+	transition: height 0.2s, opacity 0.2s;
+}
+
+#nav-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#nav-info > div {
+	text-align: right;
+}
+
+#channel-menu {
+	display: flex;
+	justify-content: end;
+}
+#channel-info {
+	padding: 0 0.8em;
+}
+.channel-menu-button {
+	all: unset;
+	cursor: pointer;
+	transform: translate(0, -0.12em);
+}
+
+#ig-logo {
+	height: 1.1em;
+	margin-top: 0.05em;
+}
+
+#yt-logo {
+	height: 1.4em;
+	margin-top: -0.12em;
+}
+
+.footer-icon {
+	position: absolute;
+	margin-left: 0.3em;
+}
+
+#crt-lines,
+#crt-video {
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#crt-lines {
+	background-image: repeating-linear-gradient(
+		transparent,
+		transparent 0.8vh,
+		hsla(0, 0%, 100%, 0.03) 0,
+		hsla(0, 0%, 100%, 0.03) 1.6vh
+	);
+	animation: crt-down 150s linear infinite;
+	background-size: 100% 200%;
+	opacity: 0.4;
+}
+
+#crt-lines::after {
+	content: "";
+	display: inline-block;
+	position: fixed;
+	height: 12vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(235, 203, 255, 0.189), rgba(0, 0, 0, 0));
+	animation: crt-refresh 20s linear infinite;
+}
+
+#crt-video {
+	background-image: var(--current-channel);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.2;
+	filter: blur(4px) brightness(0.8);
+	z-index: -1;
+}
+
+@keyframes crt-refresh {
+	0% {
+		top: -20%;
+	}
+	100% {
+		top: 100%;
+	}
+}
+@keyframes crt-down {
+	0% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#nav-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#nav-wrapper {
+		height: fit-content;
+	}
+	#nav-info > div {
+		text-align: left;
+	}
+	#channel-menu {
+		justify-content: left;
+	}
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="./styles.css"
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<title>my hobby | home</title>
+	</head>
+	<body>
+		<div id="crt-lines"></div>
+		<div id="main-container">
+			<div id="nav-wrapper">
+				<div
+					id="nav-container"
+					class="text-dimmed"
+				>
+					<nav class="flex-column">
+						<a
+							class="text-full interactive"
+							id="home"
+							>/home</a
+						>
+						<input
+							type="checkbox"
+							id="projects-toggle"
+							class="toggle-checkbox"
+						/>
+						<label
+							id="projects-label"
+							class="interactive"
+							for="projects-toggle"
+							>/projects</label
+						>
+						<div class="flex-column togglable">
+							<a
+								id="3d"
+								class="interactive"
+								href="./3d/3d.html"
+								>└ 3D</a
+							>
+							<a
+								id="webdev"
+								class="interactive"
+								href="./web-dev/webdev.html"
+								>└ webdev</a
+							>
+						</div>
+
+						<a
+							id="contact"
+							class="interactive"
+							href="./contact/contact.html"
+							>/contact</a
+						>
+					</nav>
+					<div id="nav-info">
+						<noscript>
+							<div id="date">14 Oct, 2005</div>
+						</noscript>
+					</div>
+					<script src="./@scripts/nav.js"></script>
+				</div>
+			</div>
+			<main
+				id="content-wrapper"
+				class="text-dimmed"
+			>
+				<p class="uppercase">
+					Hi! I'm Hania, a comp sci student based in Poland, a
+					<a
+						class="text-full"
+						target="_blank"
+						href="https://en.wikipedia.org/wiki/Dual_process_theory"
+						>programmer with an aesthetic sense.</a
+					>
+					I'm a bit of a jack-of-all-trades who can't settle on just one hobby, so I made this website to share the chaos. 👾
+				</p>
+				<p class="uppercase">
+					Currently I'm focusing on learning the technical side of
+					<a
+						class="text-full"
+						target="_blank"
+						href="https://en.wikipedia.org/wiki/Graphics_pipeline"
+					>
+						graphics programming
+					</a>
+					and developing my own
+					<a
+						class="text-full"
+						target="_blank"
+						href="https://aesthetics.fandom.com/wiki/Analog_Horror"
+						>art style</a
+					>.
+				</p>
+				<p class="uppercase">
+					When I'm not nerding out in front of my pc, you can find me playing my guitar, drawing, cubing, and when winter comes
+					-
+					<a
+						class="text-full"
+						target="_blank"
+						href="https://m.youtube.com/watch?v=KXfQkQM6J5s"
+						>snowboarding</a
+					>.
+				</p>
+			</main>
+			<footer class="text-full">
+				<nav class="uppercase full flex-column">
+					<a
+						class="interactive"
+						href="https://www.youtube.com/channel/UC75J4dY3h3v5KTrBteo98hQ"
+					>
+						&gt; Youtube
+						<img
+							id="yt-logo"
+							class="image-dimmed footer-icon"
+							src="@media/yt-logo.svg"
+							alt="youtube logo"
+						/>
+					</a>
+					<a
+						class="interactive"
+						href="https://www.instagram.com/thattentativetype"
+					>
+						&gt; Instagram
+						<img
+							id="ig-logo"
+							class="image-dimmed footer-icon"
+							src="@media/ig-logo.svg"
+							alt="instagram logo"
+						/>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<div id="crt-video"></div>
+	</body>
+</html>

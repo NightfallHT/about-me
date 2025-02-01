@@ -1,0 +1,126 @@
+.toggle-checkbox:checked + * + #form-container.togglable > form {
+	height: fit-content;
+	transition: height 0.2s, opacity 0.2s !important;
+}
+.toggle-checkbox + * + #form-container.togglable {
+	border: none;
+	padding: 0;
+}
+.toggle-checkbox:checked + * + #form-container.togglable {
+	border: 3px solid var(--primary-full);
+	border-top: 0;
+	padding: 1rem;
+}
+#form-container.togglable > * {
+	transition: height 0.2s, opacity 0s !important;
+}
+#form-container {
+	max-width: 100%;
+}
+
+#system-autocomplete {
+	width: 100%;
+	flex-direction: column;
+	display: none;
+}
+#post-toggle-label {
+	padding-left: 0.4em;
+	display: block;
+	width: 100%;
+}
+.styled-checkbox:checked::before {
+	content: "✓";
+}
+.styled-checkbox::before {
+	content: "𐄂";
+}
+form {
+	max-width: 100%;
+	font-size: var(--font-size-secondary);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 1rem;
+}
+
+#forum-anchor {
+	padding: 2em 0;
+	gap: 1em;
+}
+
+.forum-post {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-size-secondary);
+}
+.post-date,
+.post-os {
+	color: var(--primary-dimmed);
+}
+
+.styled-checkbox,
+.text-input,
+#os-dropdown,
+#submit-button,
+#clear-button {
+	all: unset;
+}
+#submit-button,
+#clear-button {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: var(--font-size-primary);
+}
+#submit-button:hover,
+#clear-button:hover {
+	text-shadow: none;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: var(--CA-offset) var(--CA-offset) 0px var(--CA-blue-full),
+		calc(var(--CA-offset) * -1) calc(var(--CA-offset) * -1) 0px var(--CA-red-full);
+	background-color: var(--primary-full);
+	color: rgb(47, 48, 51);
+	fill: rgb(47, 48, 51);
+}
+textarea {
+	font-size: var(--font-size-primary);
+	background-color: rgba(0, 0, 0, 0);
+	color: var(--primary-full);
+	text-shadow: unset;
+	font-family: unset;
+}
+#os-dropdown,
+#submit-button,
+#clear-button,
+.text-input,
+#post-toggle-label,
+textarea {
+	padding: 0.2em 0.4em;
+	border: 3px solid var(--primary-full);
+}
+#os-dropdown {
+	flex-grow: 1;
+}
+label {
+	width: auto;
+	word-wrap: break-word;
+}
+
+#input-color {
+	border: none;
+}
+
+.ui-autocomplete {
+	color: var(--primary-full) !important;
+	font-family: unset !important;
+	background-color: var(--bg-color) !important;
+	border: 3px solid var(--primary-full) !important;
+	border-top: none !important;
+	padding: 0.4em 0 !important;
+}
+
+.submit-tooltip {
+	font-family: unset !important;
+	color: var(--primary-full) !important;
+	background-color: var(--bg-color) !important;
+}

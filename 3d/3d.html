@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./3d.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		<title>my hobby | 3d</title>
+	</head>
+	<body>
+		<div id="crt-lines"></div>
+		<div id="main-container">
+			<div id="nav-wrapper">
+				<div
+					id="nav-container"
+					class="text-dimmed"
+				>
+					<nav class="flex-column">
+						<a
+							class="text-full interactive"
+							id="home"
+							href="../"
+							>/home</a
+						>
+						<input
+							type="checkbox"
+							id="projects-toggle"
+							class="toggle-checkbox"
+						/>
+						<label
+							id="projects-label"
+							class="interactive"
+							for="projects-toggle"
+							>/projects</label
+						>
+						<div class="flex-column togglable">
+							<a
+								id="3d"
+								class="interactive"
+								>└ 3D</a
+							>
+							<a
+								id="webdev"
+								class="interactive"
+								href="./../web-dev/webdev.html"
+								>└ webdev</a
+							>
+						</div>
+
+						<a
+							id="contact"
+							class="interactive"
+							href="./../contact/contact.html"
+							>/contact</a
+						>
+					</nav>
+					<div id="nav-info">
+						<noscript>
+							<div id="date">14 Oct, 2005</div>
+						</noscript>
+					</div>
+					<script src="../@scripts/nav.js"></script>
+				</div>
+			</div>
+			<header>
+				<h1 class="text-full">check out my 3d renders!</h1>
+				<h2 class="text-dimmed">(the ones that I actually finished!)</h2>
+			</header>
+			<main
+				id="content-wrapper"
+				class="text-full vhs-filter"
+			>
+				<div id="gallery-container"></div>
+				<div id="noscript">
+					<img
+						class="gallery-miniature"
+						src="./../@data/renders/static/lilypads.png"
+						alt="image of lilies"
+					/>
+					<img
+						class="gallery-miniature"
+						src="./../@data/renders/static/layla.png"
+						alt="image of a magical girl"
+					/>
+					<img
+						class="gallery-miniature"
+						src="./../@data/renders/static/donut.png"
+						alt="image of a donut"
+					/>
+					<p>...to see more of my works enable JavaScript!</p>
+				</div>
+			</main>
+			<footer class="text-full">
+				<nav class="uppercase full flex-column">
+					<a
+						class="interactive"
+						href="https://www.youtube.com/channel/UC75J4dY3h3v5KTrBteo98hQ"
+					>
+						&gt; Youtube
+						<svg
+							id="yt-logo"
+							class="image-dimmed footer-icon"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 800 600"
+							style="enable-background: new 0 0 800 600"
+							xml:space="preserve"
+						>
+							<style type="text/css">
+								.st0 {
+									fill: #ba271b;
+								}
+								.st1 {
+									fill: #ea514c;
+								}
+								.st2 {
+									fill: #d22d20;
+								}
+								.st3 {
+									fill: #e93324;
+								}
+								.st4 {
+									fill-rule: evenodd;
+									clip-rule: evenodd;
+									fill: #ffffff;
+								}
+							</style>
+							<path
+								class="st0"
+								d="M316.8,69.7h165.8v18.4h36.8v18.4h18.4V125h18.4v18.4h18.4v18.4h18.4v18.4h18.4v36.8H630v165.8h-18.4v36.8
+	h-18.4v18.4h-18.4v18.4h-18.4V475h-18.4v18.4h-18.4v18.4h-36.8v18.4H316.8v-18.4H280v-18.4h-18.4V475h-18.4v-18.4h-18.4v-18.4h-18.4
+	v-18.4h-18.4v-36.8h-18.4V217.1h18.4v-36.8h18.4v-18.4h18.4v-18.4h18.4V125h18.4v-18.4H280V88.1h36.8V69.7z"
+							/>
+							<path
+								class="st1"
+								d="M206.3,217.1h-18.4v165.8h18.4v36.8h18.4v18.4h18.4v18.4h18.4V475H280v18.4h36.8v18.4h165.8v-18.4h36.8V475
+	h18.4v-18.4h18.4v-18.4h18.4v-18.4h18.4v-36.8h18.4V217.1h-18.4v-36.8h-18.4v-18.4h-18.4v-18.4h-18.4V125h-18.4v-18.4h-36.8V88.1
+	H316.8v18.4H280V125h-18.4v18.4h-18.4v18.4h-18.4v18.4h-18.4V217.1z"
+							/>
+							<path
+								class="st1"
+								d="M206.3,217.1h-18.4v165.8h18.4v36.8h18.4v18.4h18.4v18.4h18.4V475H280v18.4h36.8v18.4h165.8v-18.4h36.8V475
+	h18.4v-18.4h18.4v-18.4h18.4v-18.4h18.4v-36.8h18.4V217.1h-18.4v-36.8h-18.4v-18.4h-18.4v-18.4h-18.4V125h-18.4v-18.4h-36.8V88.1
+	H316.8v18.4H280V125h-18.4v18.4h-18.4v18.4h-18.4v18.4h-18.4V217.1z"
+							/>
+							<path
+								class="st2"
+								d="M206.3,217.1v202.6h18.4v18.4h18.4v18.4h18.4V475H280v18.4h36.8v18.4h165.8v-18.4h36.8V475h18.4v-18.4h18.4
+	v-18.4h18.4v-18.4h18.4v-36.8h18.4V217.1h-18.4v-36.8h-18.4v-18.4h-36.8v-18.4h-18.4V125h-36.8v-18.4H316.8V125H280v18.4h-18.4v18.4
+	h-18.4v18.4h-18.4v36.8H206.3z"
+							/>
+							<path
+								class="st3"
+								d="M593.2,382.9h-18.4v36.8h-18.4v18.4h-18.4v18.4h-18.4V475h-36.8v18.4H316.8V475H280v-18.4h-18.4v-18.4h-18.4
+	v-18.4h-36.8V217.1h18.4v-36.8h18.4v-18.4h18.4v-18.4H280V125h36.8v-18.4h165.8V125h36.8v18.4h18.4v18.4h36.8v18.4h18.4V382.9z"
+							/>
+							<path
+								class="st4"
+								d="M280,401.3v-18.4h-18.4v-18.4h-18.4v-129h18.4v-18.4H280v-18.4h239.5v18.4h18.4v18.4h18.4v129h-18.4v18.4h-18.4
+	v18.4H280z M372.1,346v-92.1h18.4v18.4h36.8v18.4h18.4v18.4h-18.4v18.4h-36.8V346H372.1z"
+							/>
+						</svg>
+					</a>
+					<a
+						class="interactive"
+						href="https://www.instagram.com/thattentativetype"
+					>
+						&gt; Instagram
+						<img
+							id="ig-logo"
+							class="image-dimmed footer-icon"
+							src="../@media/ig-logo.svg"
+							alt="instagram logo"
+						/>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<div id="crt-video"></div>
+		<div id="pop-up-anchor"></div>
+		<script
+			type="module"
+			src="../@scripts/gallery.js"
+		></script>
+	</body>
+</html>

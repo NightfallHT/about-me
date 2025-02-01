@@ -1,0 +1,53 @@
+[
+      {
+      "title": ".",
+      "date": "2022-08-01T14:31",
+      "imagePath": "corridor-soldier.png",
+      "animationPath": "corridor-soldier.webm"
+    },  
+    {
+      "title": "cupcakes",
+      "date": "2022-08-10T14:31",
+      "imagePath": "cupcakes.png",
+      "animationPath": "cupcakes_process.webm"
+    }, 
+    {
+      "title": "donut.mp4",
+      "date": "2022-07-21T14:31",
+      "imagePath": "donut.png",
+      "animationPath": "vhsdonut4by3.webm"
+    }, 
+    {
+      "title": "mandel",
+      "date": "2022-10-01T14:31",
+      "imagePath": "mandelbulb1.png"
+    }, 
+    {
+      "title": "layla",
+      "date": "2023-05-30T14:31",
+      "imagePath": "layla.png"
+    }, 
+    {
+      "title": "spacey",
+      "date": "2022-07-26T14:31",
+      "imagePath": "loop1.png",
+      "animationPath": "spacey1.webm"
+    }, 
+    {
+      "title": "spikes",
+      "date": "2022-07-26T22:31",
+      "imagePath": "loop2.png",
+      "animationPath": "loopey4.webm"
+    }, 
+    {
+      "title": "petrichor",
+      "date": "2023-10-10T14:31",
+      "imagePath": "lilypads.png"
+    }, 
+    {
+      "title": ".",
+      "date": "2022-09-06T14:31",
+      "imagePath": "phone.png",
+      "animationPath": "phone.webm"
+    } 
+  ]

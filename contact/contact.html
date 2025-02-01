@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./contact.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+		/>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		<title>my hobby | contact</title>
+	</head>
+	<body>
+		<div id="crt-lines"></div>
+		<div id="main-container">
+			<div id="nav-wrapper">
+				<div
+					id="nav-container"
+					class="text-dimmed"
+				>
+					<nav class="flex-column">
+						<a
+							class="text-full interactive"
+							id="home"
+							href="../"
+							>/home</a
+						>
+						<input
+							type="checkbox"
+							id="projects-toggle"
+							class="toggle-checkbox"
+						/>
+						<label
+							id="projects-label"
+							class="interactive"
+							for="projects-toggle"
+							>/projects</label
+						>
+						<div class="flex-column togglable">
+							<a
+								id="3d"
+								class="interactive"
+								href="./../3d/3d.html"
+								>└ 3D</a
+							>
+							<a
+								id="webdev"
+								class="interactive"
+								href="./../web-dev/webdev.html"
+								>└ webdev</a
+							>
+						</div>
+
+						<a
+							id="contact"
+							class="interactive"
+							>/contact</a
+						>
+					</nav>
+					<div id="nav-info">
+						<noscript>
+							<div id="date">14 Oct, 2005</div>
+						</noscript>
+					</div>
+					<script src="../@scripts/nav.js"></script>
+				</div>
+			</div>
+			<main
+				id="content-wrapper"
+				class="text-full vhs-filter"
+			>
+				<input
+					type="checkbox"
+					id="post-toggle"
+					class="toggle-checkbox"
+				/>
+				<label
+					id="post-toggle-label"
+					class="interactive"
+					for="post-toggle"
+					>Write me a message! ▶</label
+				>
+				<div
+					id="form-container"
+					class="flex-column togglable"
+				>
+					<form
+						class="flex-column"
+						action="/odbierz.php"
+						method="post"
+					>
+						<div>
+							<label
+								for="anonymous-check"
+								class="form-label"
+							>
+								Post Anonymously
+							</label>
+							<input
+								id="anonymous-check"
+								class="styled-checkbox"
+								type="checkbox"
+								name="anonymous"
+							/>
+						</div>
+
+						<label class="form-label flex-column">
+							Username:
+							<input
+								class="text-input"
+								type="text"
+								name="username"
+								required
+							/>
+						</label>
+						<label class="form-label flex-column">
+							Message:
+							<textarea
+								name="message"
+								rows="4"
+								required
+							></textarea>
+						</label>
+						<label
+							id="os-picker"
+							class="form-label"
+						>
+							Operating System:
+							<select name="os">
+								<option value="Windows">Windows</option>
+								<option value="Mac">Mac</option>
+								<option value="Linux">Linux</option>
+							</select>
+						</label>
+						<div id="system-autocomplete">
+							<label for="os-dropdown">Operating System:</label>
+							<input
+								title="Start typing to display autocomplete!"
+								id="os-dropdown"
+							/>
+						</div>
+						<div class="form-label">
+							Gender:
+							<div class="flex-column">
+								<div>
+									<input
+										id="male"
+										type="radio"
+										name="gender"
+										value="male"
+										required
+									/>
+									<label for="male">Male</label>
+								</div>
+								<div>
+									<input
+										id="female"
+										type="radio"
+										name="gender"
+										value="female"
+										required
+									/>
+									<label for="female">Female</label>
+								</div>
+								<div>
+									<input
+										id="other"
+										type="radio"
+										name="gender"
+										value="other"
+										required
+									/>
+									<label for="other"> Other / Prefer not say </label>
+								</div>
+								<div>
+									<input
+										id="attackhelicopter"
+										type="radio"
+										name="gender"
+										value="attackhelicopter"
+										required
+									/>
+									<label for="attackhelicopter"> Attack Helicopter</label>
+								</div>
+							</div>
+						</div>
+						<label class="form-label">
+							Favorite Color:
+							<input
+								id="input-color"
+								type="color"
+								name="favorite_color"
+							/>
+						</label>
+						<input
+							id="clear-button"
+							class="interactive"
+							type="reset"
+							value="Clear"
+						/>
+						<input
+							id="submit-button"
+							class="interactive"
+							type="submit"
+							value="Submit"
+						/>
+					</form>
+				</div>
+				<div
+					id="forum-anchor"
+					class="flex-column"
+				></div>
+			</main>
+			<footer class="text-full">
+				<nav class="uppercase full flex-column">
+					<a
+						class="interactive"
+						href="https://www.youtube.com/channel/UC75J4dY3h3v5KTrBteo98hQ"
+					>
+						&gt; Youtube
+						<img
+							id="yt-logo"
+							class="image-dimmed footer-icon"
+							src="../@media/yt-logo.svg"
+							alt="youtube logo"
+						/>
+					</a>
+					<a
+						class="interactive"
+						href="https://www.instagram.com/thattentativetype"
+					>
+						&gt; Instagram
+						<img
+							id="ig-logo"
+							class="image-dimmed footer-icon"
+							src="../@media/ig-logo.svg"
+							alt="instagram logo"
+						/>
+					</a>
+				</nav>
+			</footer>
+		</div>
+		<div id="crt-video"></div>
+		<div id="pop-up-anchor"></div>
+		<script
+			type="module"
+			src="./../@scripts/form.js"
+		></script>
+		<script
+			type="module"
+			src="./../@scripts/forum.js"
+		></script>
+	</body>
+</html>
